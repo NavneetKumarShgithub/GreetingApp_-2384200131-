@@ -9,3 +9,15 @@ C:\Users\Lenovo\OneDrive\Desktop\Visual Studio\GreetingApp\HelloGreetingApplicat
 C:\Users\Lenovo\OneDrive\Desktop\Visual Studio\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
 C:\Users\Lenovo\OneDrive\Desktop\Visual Studio\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
 C:\Users\Lenovo\OneDrive\Desktop\Visual Studio\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.deps.json
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.dll
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.pdb
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfoInputs.cache
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfo.cs
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.csproj.CoreCompileInputs.cache
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.sourcelink.json
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
+D:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll

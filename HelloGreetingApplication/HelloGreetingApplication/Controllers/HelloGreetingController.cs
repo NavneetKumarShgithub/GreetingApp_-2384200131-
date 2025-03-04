@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.HttpSys;
 using ModelLayer.Model;
+using BusinessLayer.Interface;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -8,6 +9,15 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
     {
+        private readonly ILogger<HelloGreetingController> logger;
+        private readonly IGreetingBL gettingBL;
+
+        public HelloGreetingController(ILogger<HelloGreetingController> logger, IGreetingBL gettingBL)
+        {
+            this.logger = logger;
+            this.gettingBL = gettingBL;
+        }
+
         [HttpGet]
         public IActionResult Get()
         {
@@ -17,6 +27,18 @@ namespace HelloGreetingApplication.Controllers
             responseModel.Message = "Hello to Greeting AppAPI Endpoint";
 
             responseModel.Data = "Hello World!";
+            return Ok(responseModel);
+        }
+        [HttpGet]
+        [Route("GettingMessage")]
+        public IActionResult Get1()
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            var result = gettingBL.HelloWorldPrint();
+            responseModel.Success = true;
+            responseModel.Message = "Hello API endpoint hit";
+
+            responseModel.Data = result;
             return Ok(responseModel);
         }
 
