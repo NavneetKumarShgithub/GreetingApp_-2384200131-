@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.Model;
 
 namespace BusinessLayer.Service
 {
@@ -21,6 +22,23 @@ namespace BusinessLayer.Service
         {
             var message = greetingRl.HelloWorldPrint();
             return message;
+
+        }
+        public string UserAttributeMsgBL(UserModel userModel)
+        {
+            var message = greetingRl.UserAttributeMsg(userModel);
+            if (message == null)
+            {
+                return "Hello World!";
+            }
+            else if (message == userModel.FirstName)
+            {
+                return userModel.FirstName + "Hello";
+            }
+            else 
+            {
+                return "Hello" + userModel.LastName;
+            }
         }
     }
 }

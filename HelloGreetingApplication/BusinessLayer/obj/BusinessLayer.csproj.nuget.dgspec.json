@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GreetingApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\GreetingApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GreetingApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\GreetingApp\\HelloGreetingApplication\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj"
+              "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj"
               },
-              "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj"
+              "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,14 +169,14 @@
         }
       }
     },
-    "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\GreetingApp\\HelloGreetingApplication\\RepositoryLayer\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj"
+              "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj"
               }
             }
           }
@@ -218,6 +218,32 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

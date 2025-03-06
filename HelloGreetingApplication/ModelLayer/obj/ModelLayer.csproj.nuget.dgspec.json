@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {}
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {}
   },
   "projects": {
-    "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\GreetingApp\\HelloGreetingApplication\\ModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\New folder (2)\\UC3\\HelloGreetingApplication\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
