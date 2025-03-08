@@ -14,5 +14,11 @@ namespace BusinessLayer.Interface
         public string HelloWorldPrint();
 
         public string UserAttributeMsgBL(UserModel userModel);
+
+        public bool AddGreeting(GreetingModel greetingModel);
+
+        
+
+        //public string GetGreetingById(int id);
     }
 }

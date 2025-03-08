@@ -6,11 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
+using RepositoryLayer.Context;
 
 namespace RepositoryLayer.Service
 {
     public class GreetingRL : IGreetingRL
     {
+        HelloGreetingContext helloGreetingContext;
+        public GreetingRL(HelloGreetingContext helloGreetingContext)
+        {
+            this.helloGreetingContext = helloGreetingContext;
+        }
         public List<UserModel> nameList = new(){        
             new UserModel {FirstName = "Tushar", LastName = "Kumar" },
             new UserModel {FirstName = "Uday", LastName = "Saraswat " },
@@ -45,6 +52,21 @@ namespace RepositoryLayer.Service
             }
             return null;
             
+        }
+        public bool MessageAddRL(GreetingModel greetingModel)
+        {
+            if (greetingModel == null)
+            {
+                return false;
+            }
+            UserEntity greetingEntity = new UserEntity()
+            {
+                GreetingMessage = greetingModel.GreetingMessage
+            };
+
+            helloGreetingContext.Greetings.Add(greetingEntity);
+            helloGreetingContext.SaveChanges();
+            return true;
         }
     }
 }

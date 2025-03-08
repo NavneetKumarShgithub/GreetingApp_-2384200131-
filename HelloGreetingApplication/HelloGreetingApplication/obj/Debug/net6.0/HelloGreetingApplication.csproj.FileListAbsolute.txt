@@ -250,3 +250,10 @@ C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\Hel
 C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\obj\Debug\net6.0\HelloGreetingApplication.pdb
 C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\obj\Debug\net6.0\HelloGreetingApplication.genruntimeconfig.cache
 C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\obj\Debug\net6.0\ref\HelloGreetingApplication.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Lenovo\OneDrive\Desktop\New folder (2)\UC3\HelloGreetingApplication\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

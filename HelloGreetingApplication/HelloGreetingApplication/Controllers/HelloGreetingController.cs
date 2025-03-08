@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Server.HttpSys;
 using ModelLayer.Model;
 using BusinessLayer.Interface;
 using BusinessLayer.Service;
+using Microsoft.EntityFrameworkCore;
+using System;
+using NLog;
+using NLog.Web;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -12,6 +16,7 @@ namespace HelloGreetingApplication.Controllers
     {
         private readonly ILogger<HelloGreetingController> logger;
         private readonly IGreetingBL greetingBL;
+        
 
         public HelloGreetingController(ILogger<HelloGreetingController> logger, IGreetingBL gettingBL)
         {
@@ -20,6 +25,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         [HttpGet]
+        [Route("Messageshow")]
         public IActionResult Get()
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -57,6 +63,7 @@ namespace HelloGreetingApplication.Controllers
         /// <param name="requestModel"></param>
         /// <returns>response model</returns>
         [HttpPost]
+        [Route("RequestData")]
         public IActionResult Post(RequestModel requestModel)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -73,6 +80,7 @@ namespace HelloGreetingApplication.Controllers
         /// <param name="requestModel"></param>
         /// <returns>response model</returns>
         [HttpPut]
+        [Route("partial Update")]
         public IActionResult Put(RequestModel requestModel) 
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -90,6 +98,7 @@ namespace HelloGreetingApplication.Controllers
         /// <param name="requestModel"></param>
         /// <returns>response model</returns>
         [HttpPatch]
+        [Route("PartiallyUpdatation")]
         public IActionResult Patch(RequestModel requestModel)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
@@ -115,6 +124,55 @@ namespace HelloGreetingApplication.Controllers
             responseModel.Data = null; // No data to return on delete
             return Ok(responseModel);
         }
+
+        /// <summary>
+        /// Save a message in Greetingdatabase
+        /// </summary>
+        /// <param name="greetingModel"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("ad message")]
+        public IActionResult AddMessage(GreetingModel greetingModel)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+
+            var result = greetingBL.AddGreeting(greetingModel);
+
+            if (result)
+            {
+
+                responseModel.Success = true;
+                responseModel.Message = "Greeting message save successfully";
+                responseModel.Data = greetingModel.GreetingMessage;
+                return Ok(responseModel);
+            }
+            return BadRequest(responseModel);
+        }
+
+        ///// <summary>
+        ///// retrive message by UId number
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <returns></returns>
+        //[HttpGet("{id}")]
+        //public IActionResult GetMessage(int id)
+        //{
+        //    ResponseModel<string> responseModel = new ResponseModel<string>();
+        //    var message = greetingBL.GetGreetingById(id); 
+        //    if (message == null)
+        //    {
+        //        responseModel.Success = false;
+        //        responseModel.Message = "not found";
+        //        responseModel.Data = null;
+        //        return NotFound(responseModel);
+        //    }
+
+        //    responseModel.Success = true;
+        //    responseModel.Message = "Greeting message save successfully";
+        //    responseModel.Data = null;
+        //    return Ok(responseModel);
+        //}
+
 
 
     }
