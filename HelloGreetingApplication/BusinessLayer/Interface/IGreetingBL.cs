@@ -19,6 +19,6 @@ namespace BusinessLayer.Interface
 
         
 
-        //public string GetGreetingById(int id);
+        public GreetingModel FindMessageBL(RequestMessageId requestMessageId);
     }
 }

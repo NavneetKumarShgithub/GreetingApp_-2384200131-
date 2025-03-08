@@ -149,29 +149,27 @@ namespace HelloGreetingApplication.Controllers
             return BadRequest(responseModel);
         }
 
-        ///// <summary>
-        ///// retrive message by UId number
-        ///// </summary>
-        ///// <param name="id"></param>
-        ///// <returns></returns>
-        //[HttpGet("{id}")]
-        //public IActionResult GetMessage(int id)
-        //{
-        //    ResponseModel<string> responseModel = new ResponseModel<string>();
-        //    var message = greetingBL.GetGreetingById(id); 
-        //    if (message == null)
-        //    {
-        //        responseModel.Success = false;
-        //        responseModel.Message = "not found";
-        //        responseModel.Data = null;
-        //        return NotFound(responseModel);
-        //    }
+        /// <summary>
+        /// retrive message by UId number
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("FindMessage")]
+        public IActionResult FindMessage(RequestMessageId requestMessageId)
+        {
+            ResponseModel<string?> response = new ResponseModel<string?>();
 
-        //    responseModel.Success = true;
-        //    responseModel.Message = "Greeting message save successfully";
-        //    responseModel.Data = null;
-        //    return Ok(responseModel);
-        //}
+            var result = greetingBL.FindMessageBL(requestMessageId);
+            if (result != null)
+            {
+                response.Success = true;
+                response.Message = "Message got.";
+                response.Data = result.GreetingMessage;
+                return Ok(response);
+            }
+            return BadRequest(response);
+        }
 
 
 

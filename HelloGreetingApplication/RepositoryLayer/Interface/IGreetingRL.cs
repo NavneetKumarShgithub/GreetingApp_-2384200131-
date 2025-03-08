@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace RepositoryLayer.Interface
 {
@@ -15,5 +16,7 @@ namespace RepositoryLayer.Interface
         public bool MessageAddRL(GreetingModel greetingModel);
 
         public string UserAttributeMsg(UserModel userModel);
+
+        public UserEntity FindMessageRL(RequestMessageId requestMessageId);
     }
 }

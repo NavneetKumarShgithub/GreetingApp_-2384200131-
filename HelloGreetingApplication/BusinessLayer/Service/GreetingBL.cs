@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ModelLayer.Model;
+using RepositoryLayer.Service;
 
 namespace BusinessLayer.Service
 {
@@ -48,6 +49,17 @@ namespace BusinessLayer.Service
                 return true;
             }
             return false;
+        }
+        public GreetingModel FindMessageBL(RequestMessageId requestMessageId)
+        {
+            GreetingModel greetingModel = new GreetingModel();
+            var result = greetingRl.FindMessageRL(requestMessageId);
+            if (result != null)
+            {
+                greetingModel.GreetingMessage = result.GreetingMessage;
+                return greetingModel;
+            }
+            return greetingModel;
         }
     }
 }

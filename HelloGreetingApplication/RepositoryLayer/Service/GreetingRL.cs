@@ -68,5 +68,10 @@ namespace RepositoryLayer.Service
             helloGreetingContext.SaveChanges();
             return true;
         }
+        public UserEntity FindMessageRL(RequestMessageId requestMessageId)
+        {
+            var result = helloGreetingContext.Greetings.FirstOrDefault(e => e.UserId == requestMessageId.Id);
+            return result;
+        }
     }
 }
