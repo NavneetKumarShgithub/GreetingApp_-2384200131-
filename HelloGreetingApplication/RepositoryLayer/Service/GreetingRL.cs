@@ -73,5 +73,9 @@ namespace RepositoryLayer.Service
             var result = helloGreetingContext.Greetings.FirstOrDefault(e => e.UserId == requestMessageId.Id);
             return result;
         }
+        public List<UserEntity> ListMessageRL()
+        {
+            return helloGreetingContext.Greetings.ToList();
+        }
     }
 }

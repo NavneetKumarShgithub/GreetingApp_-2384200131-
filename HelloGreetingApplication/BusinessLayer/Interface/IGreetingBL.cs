@@ -6,6 +6,7 @@ using BusinessLayer.Interface;
 using RepositoryLayer.Interface;
 using System.Threading.Tasks;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace BusinessLayer.Interface
 {
@@ -20,5 +21,6 @@ namespace BusinessLayer.Interface
         
 
         public GreetingModel FindMessageBL(RequestMessageId requestMessageId);
+        public List<UserEntity> ListMessageBL();
     }
 }

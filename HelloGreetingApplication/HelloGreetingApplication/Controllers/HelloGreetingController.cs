@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using NLog;
 using NLog.Web;
+using RepositoryLayer.Entity;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -169,6 +170,23 @@ namespace HelloGreetingApplication.Controllers
                 return Ok(response);
             }
             return BadRequest(response);
+        }
+        [HttpGet]
+        [Route("GetListMessage")]
+        public ActionResult<List<UserEntity>> ListMessage()
+        {
+            ResponseModel<List<UserEntity>> responseModel = new ResponseModel<List<UserEntity>>();
+            List<UserEntity> output = greetingBL.ListMessageBL();
+            if (output != null && output.Count > 0)
+            {
+                responseModel.Success = true;
+                responseModel.Message = "Message List";
+                responseModel.Data = output;
+                return Ok(responseModel);
+            }
+            responseModel.Success = false;
+            responseModel.Message = "";
+            return BadRequest(responseModel);
         }
 
 

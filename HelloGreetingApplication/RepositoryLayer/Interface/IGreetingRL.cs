@@ -18,5 +18,7 @@ namespace RepositoryLayer.Interface
         public string UserAttributeMsg(UserModel userModel);
 
         public UserEntity FindMessageRL(RequestMessageId requestMessageId);
+
+        public List<UserEntity> ListMessageRL();
     }
 }

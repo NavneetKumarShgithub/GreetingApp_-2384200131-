@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ModelLayer.Model;
 using RepositoryLayer.Service;
+using RepositoryLayer.Entity;
 
 namespace BusinessLayer.Service
 {
@@ -60,6 +61,10 @@ namespace BusinessLayer.Service
                 return greetingModel;
             }
             return greetingModel;
+        }
+        public List<UserEntity> ListMessageBL()
+        {
+            return greetingRl.ListMessageRL();
         }
     }
 }
